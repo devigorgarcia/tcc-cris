@@ -15,7 +15,7 @@ export const createUserController = async (
   return response.status(201).json(newUser);
 };
 
-export const listUsersController = async (response: Response) => {
+export const listUsersController = async (request: Request, response: Response) => {
   const users = await listUsersService();
 
   return response.json(users);

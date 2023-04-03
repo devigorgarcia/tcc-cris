@@ -7,6 +7,8 @@ CREATE TABLE "User" (
     "enrollDate" TIMESTAMP(3) NOT NULL,
     "birthDate" TIMESTAMP(3) NOT NULL,
     "isRh" BOOLEAN NOT NULL DEFAULT false,
+    "cpf" TEXT NOT NULL,
+    "phone" INTEGER NOT NULL,
     "state" TEXT NOT NULL,
     "city" TEXT NOT NULL,
 

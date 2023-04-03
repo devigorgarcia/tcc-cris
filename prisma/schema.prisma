@@ -18,6 +18,8 @@ model User {
   enrollDate DateTime
   birthDate  DateTime
   isRh       Boolean    @default(false)
+  cpf        String
+  phone      Int
   state      String
   city       String
   holerite   Holerite[]

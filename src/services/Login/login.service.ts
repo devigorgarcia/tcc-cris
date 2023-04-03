@@ -31,5 +31,5 @@ export const loginService = async (data: ILogin) => {
     }
   );
 
-  return token;
+  return { token, id: user.id, isRh: user.isRh };
 };

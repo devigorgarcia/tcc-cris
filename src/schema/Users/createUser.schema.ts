@@ -1,4 +1,4 @@
-import { object, z } from "zod";
+import { z } from "zod";
 import { holeriteWithoutUserIdSchema } from "../Holerites/holerites.schemas";
 
 export const userSchema = z.object({
@@ -9,6 +9,8 @@ export const userSchema = z.object({
   enrollDate: z.date(),
   birthDate: z.date(),
   isRh: z.boolean(),
+  cpf: z.string(),
+  phone: z.number(),
   state: z.string(),
   city: z.string(),
 });
@@ -20,6 +22,8 @@ export const createUserSchema = z.object({
   enrollDate: z.string(),
   birthDate: z.string(),
   isRh: z.boolean(),
+  cpf: z.string(),
+  phone: z.number(),
   state: z.string(),
   city: z.string(),
 });
